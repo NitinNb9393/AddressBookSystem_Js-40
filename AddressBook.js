@@ -1,3 +1,4 @@
+
 class Contact
 {
     firstName;
@@ -89,5 +90,16 @@ class Contact
 }
 
 
+
 let contact1 = new Contact("Nitin", "Babar", "karad", "Satara", "Maharashtra",415105,8237259393,"nitinbabar9393@gmail.com");
-console.log(contact1)
+let contact2 = new Contact("Anu", "Lad", "Kolhapur", "Kolhapur", "Maharashtra", "414004", "7522929393", "anulad@gmail.com")
+let contact3 = new Contact("Shivani", "babar", "Karad", "karad", "Maharashtra", "561004", "1111111111", "shivani@gmail.com")
+
+var addressBookArray = new Array()
+addressBookArray.push(contact1)
+addressBookArray.push(contact2)
+addressBookArray.push(contact3)    
+
+for(let i = 0; i < addressBookArray.length; i++){
+    console.log(addressBookArray[i].toString())
+}
